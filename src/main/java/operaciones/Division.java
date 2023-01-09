@@ -1,11 +1,10 @@
 package operaciones;
 
-import interfaces.BuilderOperacion;
 import interfaces.Operacion;
 
 public class Division implements Operacion {
 
-    private Division(){
+    public Division(){
 
     }
     @Override
@@ -13,21 +12,5 @@ public class Division implements Operacion {
         return operando / operando2;
     }
 
-    public static class Builder implements BuilderOperacion {
-        private Division division;
 
-        public Builder(){
-            this.reset();
-        }
-        @Override
-        public void reset() {
-            this.division = new Division();
-        }
-
-        public Division Build(){
-            Division build = this.division;
-            this.reset();
-            return build;
-        }
-    }
 }

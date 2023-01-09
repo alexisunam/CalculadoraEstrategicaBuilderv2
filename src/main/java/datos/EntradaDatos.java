@@ -19,18 +19,12 @@ public class EntradaDatos {
         this.numero2 = input.nextInt();
         input.nextLine();
 
-        System.out.println("");
+
     }
 
-    public int getNumero() {
-        return numero;
-    }
 
-    public int getNumero2() {
-        return numero2;
-    }
 
-    public String getAccion() {
-        return accion;
-    }
+
+
+
 }

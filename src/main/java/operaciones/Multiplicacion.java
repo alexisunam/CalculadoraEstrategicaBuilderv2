@@ -1,11 +1,10 @@
 package operaciones;
 
-import interfaces.BuilderOperacion;
 import interfaces.Operacion;
 
 public class Multiplicacion implements Operacion {
 
-    private Multiplicacion(){
+    public Multiplicacion(){
 
     }
     @Override
@@ -13,21 +12,5 @@ public class Multiplicacion implements Operacion {
         return operando * operando2;
     }
 
-    public static class Builder implements BuilderOperacion {
-        private Multiplicacion multiplicacion;
 
-        public Builder(){
-            this.reset();
-        }
-        @Override
-        public void reset() {
-            this.multiplicacion = new Multiplicacion();
-        }
-
-        public Multiplicacion Build(){
-            Multiplicacion build = this.multiplicacion;
-            this.reset();
-            return build;
-        }
-    }
 }

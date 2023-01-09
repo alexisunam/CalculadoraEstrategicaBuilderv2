@@ -6,7 +6,7 @@ import datos.EntradaDatos;
 
 public class TestCalculadora {
     public static void main(String[] args) {
-        float resultado = 0.1F;
+        float resultado;
         Menu menu = new Menu();
         EntradaDatos in = new EntradaDatos();
 

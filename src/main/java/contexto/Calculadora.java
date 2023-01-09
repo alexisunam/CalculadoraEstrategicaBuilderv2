@@ -30,10 +30,14 @@ public class Calculadora {
         /**/
         public Builder setOperacionAritmetica(String operador) {
             switch (operador) {
-                case "+" -> calculadora.operacion = new Suma.Builder().Build();
-                case "-" -> calculadora.operacion = new Resta.Builder().Build();
-                case "x" -> calculadora.operacion = new Multiplicacion.Builder().Build();
-                case "/" -> calculadora.operacion = new Division.Builder().Build();
+                //case "+" -> calculadora.operacion = new Suma.Builder().Build();
+                case "+" -> calculadora.operacion = new Suma();
+                //case "-" -> calculadora.operacion = new Resta.Builder().Build();
+                case "-" -> calculadora.operacion = new Resta();
+                //case "x" -> calculadora.operacion = new Multiplicacion.Builder().Build();
+                case "X" -> calculadora.operacion = new Multiplicacion();
+                //case "/" -> calculadora.operacion = new Division.Builder().Build();
+                case "/" -> calculadora.operacion = new Division();
                 default -> calculadora.operacion = null;
             }
             return this;
